@@ -10,6 +10,8 @@ type Errors = {
   phone?: string[];
 };
 
+type Error = Partial<Errors>;
+
 type Form = {
   email: string | null;
   firstName: string | null;
