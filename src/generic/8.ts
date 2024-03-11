@@ -17,7 +17,7 @@ type Form = {
   firstName: string | null;
   lastName: string | null;
   phone: string | null;
-  errors: Errors;
+  errors: Error;
 };
 
 // Реалізуйте Params так, щоб унеможливити поле 'errors' з типу Form
