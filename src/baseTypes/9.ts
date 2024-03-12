@@ -7,7 +7,7 @@ type Page = {
   likes: number;
   accounts: string[];
   status: string;
-  details?: object;
+  details?: { createAt: Date; updateAt: Date };
 };
 
 const page1: Page = {

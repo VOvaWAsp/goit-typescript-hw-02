@@ -10,8 +10,6 @@ type Errors = {
   phone?: string[];
 };
 
-type Error = Partial<Errors>;
-
 type Form = {
   email: string | null;
   firstName: string | null;
@@ -20,7 +18,9 @@ type Form = {
   errors: Error;
 };
 
+type params = Omit<Form, "errors">;
+
 // Реалізуйте Params так, щоб унеможливити поле 'errors' з типу Form
-type Params = Form;
+type Params = params;
 
 export {};
